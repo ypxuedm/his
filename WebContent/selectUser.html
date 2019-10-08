@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$("#select").click(function() {
+			$.ajax({
+				type : "post",
+				url : "testAjax.action",
+				data : {
+					"username" : "test123"
+				},
+				dataType : "json",
+				success : function(data) {
+					console.log(data);
+				}
+			});
+		});
+	})
+</script>
+</head>
+<body>
+	<button type="button" id="select">查询</button>
+</body>
+</html>

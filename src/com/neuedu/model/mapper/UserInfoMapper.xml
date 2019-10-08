@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace属性：制定当前SQL映射文件对应的借口的全类名 -->
+<mapper namespace="com.neuedu.model.mapper.UserInfoMapper">
+	<select id="selectUsers" resultType="UserInfo">
+		select * from userinfo 
+	</select>
+	
+</mapper>
